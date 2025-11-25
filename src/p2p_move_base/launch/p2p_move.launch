@@ -1,0 +1,6 @@
+<launch>
+  
+  <let name="rviz_config" value="$(find-pkg-share p2p_move_base)/rviz/p2p_move_base_localization.rviz"/>
+  <node name="rviz2" pkg="rviz2" exec="rviz2" args="-d $(var rviz_config)"/>
+
+</launch>
